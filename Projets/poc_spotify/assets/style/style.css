@@ -9,15 +9,12 @@ body {
 header {
     justify-content: baseline;
     font-family: 'Montserrat', sans-serif;
+    z-index: 2;
 }
 
 header a {
     text-decoration: none;
     color: white;
-}
-
-main {
-    background-color: #1E1E1E;
 }
 
 .vertical_menu, .menu1, .menu2, .menu_footer {
@@ -38,6 +35,7 @@ main {
     background-color: black;
     font-family: sans-serif;
     position: fixed;
+    z-index: 2;
 }
 
 .horizontal_menu {
@@ -51,7 +49,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 2;
     position: fixed;
 }
 
@@ -122,6 +120,7 @@ hr {
     padding: 11px 24px 7px 15px;
     background: linear-gradient(90deg, rgba(175,40,144,1) 0%, rgba(126,98,192,1) 50%, rgba(80,154,240,1) 100%);
     position: fixed;
+    z-index: 2;
 }
 
 .gradient_footer div {
@@ -220,4 +219,76 @@ hr {
     margin: 9px 0px 0px 26px;
     width: 131px;
     height: 40px;
+}
+
+main {
+    background: rgb(31,31,31);
+    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(18,18,18,1) 40%);
+    position: absolute;
+    left: 208px;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.sous_menu_vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.home_section {
+    padding: 0px 32px;
+    margin: 86px 0px 0px 0px;
+    gap: 16px;
+}
+
+.list_music_block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.music_block {
+    display: flex;
+    flex-direction: column;
+    background-color: #272727;
+    padding: 16px;
+    gap: 14px;
+    text-decoration: none;
+}
+
+.play_button_music_block {
+    display: none;
+}
+
+.tout_afficher {
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(255 255 255 / 70%);
 }
